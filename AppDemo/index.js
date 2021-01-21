@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  $("#phone-number").val(9999999999);
   var serverUrl = "http://localhost:2300/api/v1/voucher-code";
   $("#voucher-code").click(function (e) {
     e.preventDefault();
@@ -45,7 +44,7 @@ $(document).ready(function () {
         },
         success: function (response) {
           var otpInput = prompt(
-            "This is a simple simulator for OTP code. Your OTP is: " +
+            "This is a simple simulator for OTP code (the OTP code will be sent to device via phone-number in real scenario). Your OTP is: " +
               response.data.otpResponse.otpCode +
               "\nPlease input your OTP"
           );
