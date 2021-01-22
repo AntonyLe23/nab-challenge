@@ -49,4 +49,8 @@ II. Operation guideline:
       - At OTPService root file, run cmd below:
         + mvn clean install -DskipTests
         + java -jar target/OTPService.war
+	
+ c. Application: After setting up and run all three services, you can run the front-end application on any hosting web server or just simple run file index.html in AppDemo folder
+ 
+ Thank you for your time, this is just an very simple demo for NAB challenge, hoping you have a happy time and looking foward to getting feedback from you.
     
