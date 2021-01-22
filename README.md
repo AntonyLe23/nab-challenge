@@ -1,15 +1,22 @@
 # nab-challenge
+
 The demo for NAB Challenge - a prepaid data for SIM card
-I.	Structure:
+
+I. Structure:
+
   a.	Back-end: 
+  
     -	Using Spring Boot.
+	
     -	3 services:
-      1.	Prepaid-data-sim-card Service:
-        	Provide voucher code and all voucher codes for user via phone-number.
-      2.	Voucher-code-provide Service:
-        	Generate voucher code.
+	
+      1. Prepaid-data-sim-card Service:
+			+ Provide voucher code and all voucher codes for user via phone-number.
+      2. Voucher-code-provide Service:
+			+ Generate voucher code.
       3.	OTPService:
-        	Secure module by OTP.
+			+ Secure module by OTP.
+			
     -	Structure:
       o	Controllers: receive requests and navigate to specific service.
       o	Services: handle bussiness logic.
